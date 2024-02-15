@@ -2,3 +2,6 @@
 FROM tomcat:latest
 # copy the contents in webapps.dist to webapps
 RUN cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+# copy the build .war file to webapps location
+COPY ./*.war /usr/local/tomcat/webapps
+

@@ -1,0 +1,4 @@
+# Pull docker image using the docker instuctor FROM
+FROM tomcat:latest
+# copy the contents in webapps.dist to webapps
+RUN cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
